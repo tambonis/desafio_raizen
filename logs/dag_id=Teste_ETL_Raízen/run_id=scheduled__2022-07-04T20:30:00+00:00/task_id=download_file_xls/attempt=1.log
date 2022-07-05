@@ -1,0 +1,23 @@
+[2022-07-04 21:30:10,222] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.download_file_xls scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 21:30:10,247] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.download_file_xls scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 21:30:10,248] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 21:30:10,248] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-04 21:30:10,248] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 21:30:10,283] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_file_xls> on 2022-07-04 20:30:00+00:00
+[2022-07-04 21:30:10,293] {standard_task_runner.py:52} INFO - Started process 185 to run task
+[2022-07-04 21:30:10,300] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Teste_ETL_Raízen', 'download_file_xls', 'scheduled__2022-07-04T20:30:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Raizen.py', '--cfg-path', '/tmp/tmpwl5rg91z', '--error-file', '/tmp/tmpprvajers']
+[2022-07-04 21:30:10,303] {standard_task_runner.py:80} INFO - Job 32: Subtask download_file_xls
+[2022-07-04 21:30:10,451] {task_command.py:369} INFO - Running <TaskInstance: Teste_ETL_Raízen.download_file_xls scheduled__2022-07-04T20:30:00+00:00 [running]> on host d63650f117fd
+[2022-07-04 21:30:10,650] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Teste_ETL_Raízen
+AIRFLOW_CTX_TASK_ID=download_file_xls
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-04T20:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-04T20:30:00+00:00
+[2022-07-04 21:30:13,247] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-04 21:30:13,574] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Teste_ETL_Raízen, task_id=download_file_xls, execution_date=20220704T203000, start_date=20220704T213010, end_date=20220704T213013
+[2022-07-04 21:30:13,655] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-04 21:30:13,788] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

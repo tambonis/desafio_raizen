@@ -1,0 +1,26 @@
+[2022-07-04 23:09:25,653] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.extract_tables_file scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 23:09:25,678] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.extract_tables_file scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 23:09:25,678] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 23:09:25,678] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-04 23:09:25,678] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 23:09:25,714] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): extract_tables_file> on 2022-07-04 20:30:00+00:00
+[2022-07-04 23:09:25,723] {standard_task_runner.py:52} INFO - Started process 238 to run task
+[2022-07-04 23:09:25,730] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Teste_ETL_Raízen', 'extract_tables_file', 'scheduled__2022-07-04T20:30:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Raizen.py', '--cfg-path', '/tmp/tmphd2oiz3h', '--error-file', '/tmp/tmpgjrqqwdr']
+[2022-07-04 23:09:25,732] {standard_task_runner.py:80} INFO - Job 42: Subtask extract_tables_file
+[2022-07-04 23:09:25,904] {task_command.py:369} INFO - Running <TaskInstance: Teste_ETL_Raízen.extract_tables_file scheduled__2022-07-04T20:30:00+00:00 [running]> on host d342cad78eb0
+[2022-07-04 23:09:26,176] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Teste_ETL_Raízen
+AIRFLOW_CTX_TASK_ID=extract_tables_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-04T20:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-04T20:30:00+00:00
+[2022-07-04 23:17:36,495] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-04 23:17:36,562] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Teste_ETL_Raízen, task_id=extract_tables_file, execution_date=20220704T203000, start_date=20220704T230925, end_date=20220704T231736
+[2022-07-04 23:17:36,710] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-04 23:17:36,810] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-07-04 23:17:36,883] {dagrun.py:648} WARNING - Failed to get task '<TaskInstance: Teste_ETL_Raízen.transform_n_load_datas scheduled__2022-07-04T20:30:00+00:00 [removed]>' for dag 'Teste_ETL_Raízen'. Marking it as removed.
+[2022-07-04 23:17:36,892] {dagrun.py:648} WARNING - Failed to get task '<TaskInstance: Teste_ETL_Raízen.download_file_xls scheduled__2022-07-04T20:30:00+00:00 [removed]>' for dag 'Teste_ETL_Raízen'. Marking it as removed.
+[2022-07-04 23:17:36,893] {dagrun.py:648} WARNING - Failed to get task '<TaskInstance: Teste_ETL_Raízen.convert_xls_in_xlsx scheduled__2022-07-04T20:30:00+00:00 [removed]>' for dag 'Teste_ETL_Raízen'. Marking it as removed.

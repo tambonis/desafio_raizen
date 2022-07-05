@@ -1,0 +1,75 @@
+[2022-07-04 23:32:44,599] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.get_transform scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 23:32:44,698] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: Teste_ETL_Raízen.get_transform scheduled__2022-07-04T20:30:00+00:00 [queued]>
+[2022-07-04 23:32:44,698] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 23:32:44,699] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-04 23:32:44,699] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-04 23:32:44,832] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): get_transform> on 2022-07-04 20:30:00+00:00
+[2022-07-04 23:32:44,887] {standard_task_runner.py:52} INFO - Started process 1067 to run task
+[2022-07-04 23:32:44,922] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Teste_ETL_Raízen', 'get_transform', 'scheduled__2022-07-04T20:30:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Raizen.py', '--cfg-path', '/tmp/tmpvykwyuwy', '--error-file', '/tmp/tmpvuylyvld']
+[2022-07-04 23:32:44,942] {standard_task_runner.py:80} INFO - Job 43: Subtask get_transform
+[2022-07-04 23:32:45,211] {task_command.py:369} INFO - Running <TaskInstance: Teste_ETL_Raízen.get_transform scheduled__2022-07-04T20:30:00+00:00 [running]> on host d342cad78eb0
+[2022-07-04 23:32:45,725] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Teste_ETL_Raízen
+AIRFLOW_CTX_TASK_ID=get_transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-04T20:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-04T20:30:00+00:00
+[2022-07-04 23:33:44,281] {logging_mixin.py:115} INFO - oil_derivative
+[2022-07-04 23:33:44,283] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - Last month measures
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - Deviation: 221018.00373785692.
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - Mean: 65179.73116995437
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - Current month measures
+[2022-07-04 23:33:44,284] {logging_mixin.py:115} INFO - Deviation: 226270.06270123782.
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - Mean: 65509.831172369835
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - Relative differences: 
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - Deviation: 1.0237630368321045.
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - Mean: 1.0050644578688848.
+[2022-07-04 23:33:44,285] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:33:44,287] {logging_mixin.py:115} INFO - Mean data quality ok.
+[2022-07-04 23:33:44,287] {logging_mixin.py:115} INFO - Std data quality ok.
+[2022-07-04 23:37:33,711] {logging_mixin.py:115} INFO - Visual check: 
+[2022-07-04 23:37:33,914] {logging_mixin.py:115} INFO -       product        uf unit  ...  year_month          created_at year_month_dt
+0  GASOLINA C  RONDÔNIA   m3  ...      2000-1 2022-07-04 23:33:32       2000-01
+1  GASOLINA C      ACRE   m3  ...      2000-1 2022-07-04 23:33:32       2000-01
+2  GASOLINA C  AMAZONAS   m3  ...      2000-1 2022-07-04 23:33:32       2000-01
+3  GASOLINA C   RORAIMA   m3  ...      2000-1 2022-07-04 23:33:32       2000-01
+4  GASOLINA C      PARÁ   m3  ...      2000-1 2022-07-04 23:33:32       2000-01
+
+[5 rows x 7 columns]
+[2022-07-04 23:37:39,761] {logging_mixin.py:115} INFO - diesel
+[2022-07-04 23:37:39,761] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:37:39,761] {logging_mixin.py:115} INFO - Last month measures
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - Deviation: 85576.00037724369.
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - Mean: 32695.993555555553
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - Current month measures
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - Deviation: 136882.08541457966.
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - Mean: 37681.419177777774
+[2022-07-04 23:37:39,762] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - Relative differences: 
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - Deviation: 1.5995382444980362.
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - Mean: 1.1524781809658486.
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - ###########################
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - Possible data quality issue.
+[2022-07-04 23:37:39,763] {logging_mixin.py:115} INFO - Possible data quality issue.
+[2022-07-04 23:38:11,450] {logging_mixin.py:115} INFO - Visual check: 
+[2022-07-04 23:38:11,776] {logging_mixin.py:115} INFO -             product        uf unit  ...  year_month          created_at year_month_dt
+0  ÓLEO DIESEL S-10  RONDÔNIA   m3  ...      2013-1 2022-07-04 23:37:38       2013-01
+1  ÓLEO DIESEL S-10      ACRE   m3  ...      2013-1 2022-07-04 23:37:38       2013-01
+2  ÓLEO DIESEL S-10  AMAZONAS   m3  ...      2013-1 2022-07-04 23:37:38       2013-01
+3  ÓLEO DIESEL S-10   RORAIMA   m3  ...      2013-1 2022-07-04 23:37:38       2013-01
+4  ÓLEO DIESEL S-10      PARÁ   m3  ...      2013-1 2022-07-04 23:37:38       2013-01
+
+[5 rows x 7 columns]
+[2022-07-04 23:38:11,778] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-04 23:38:11,887] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=Teste_ETL_Raízen, task_id=get_transform, execution_date=20220704T203000, start_date=20220704T233244, end_date=20220704T233811
+[2022-07-04 23:38:12,012] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-07-04 23:38:12,034] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1067. PIDs of all processes in the group: [1067]
+[2022-07-04 23:38:12,034] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 1067
+[2022-07-04 23:38:12,084] {process_utils.py:75} INFO - Process psutil.Process(pid=1067, status='terminated', exitcode=0, started='23:32:43') (1067) terminated with exit code 0
